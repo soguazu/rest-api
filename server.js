@@ -174,4 +174,4 @@ const Player = new graphql.GraphQLObjectType({
     graphiql: true
   }));
 
-app.listen(4000, () => console.log('Server started at port: 4000'));
+app.listen(config.httpPort, () => console.log(`Server started at port: ${config.httpPort}`));
